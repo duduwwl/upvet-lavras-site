@@ -44,6 +44,9 @@ body{min-width:320px;text-rendering:optimizeLegibility;-webkit-font-smoothing:an
 .filter,.taste-picks button,.back-button{min-height:44px}
 .footer-col a{min-height:38px;display:flex;align-items:center;margin-bottom:4px}
 .contacts dd a,.support-note a{display:inline-flex;align-items:center;min-height:44px}
+.support-note strong{margin-bottom:8px}
+.support-note>a:first-of-type{display:flex;width:max-content;margin:0 0 7px}
+.support-note>a:last-of-type{margin-left:7px}
 .products-note a,.catalog-disclaimer a{display:inline-flex;align-items:center;min-height:44px;padding-inline:4px}
 
 /* Hero e seções ganham ritmo em telas grandes sem ficarem soltos. */
@@ -168,11 +171,15 @@ body{min-width:320px;text-rendering:optimizeLegibility;-webkit-font-smoothing:an
   .wrap{width:calc(100% - 28px)}
   .brand-location small{display:none}
   .brand-location strong{font-size:.92rem}
-  .products-grid{grid-template-columns:1fr}
-  .product-photo{aspect-ratio:1.12}
-  .product-info{padding:20px}
-  .product-info h3{font-size:1.06rem}
-  .product-info h2{font-size:1.06rem}
+  .products-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .product-photo{aspect-ratio:1}
+  .product-info{padding:13px 11px 12px}
+  .product-info small{font-size:.54rem;line-height:1.35;margin-bottom:7px}
+  .product-info h3,.product-info h2{font-size:.82rem;line-height:1.25;margin-bottom:8px}
+  .product-info p{font-size:.68rem;line-height:1.45;margin-bottom:11px}
+  .product-price{font-size:1.08rem}
+  .demo-price{font-size:.56rem;line-height:1.35;margin:4px 0 12px}
+  .product-add{font-size:.62rem;line-height:1.25;padding:9px 5px;min-height:44px}
   .service-picker{overflow-x:auto;scroll-snap-type:x proximity;justify-content:flex-start}
   .service-picker button{flex:0 0 108px;scroll-snap-align:start}
   .format-picks{grid-template-columns:1fr}
@@ -207,4 +214,3 @@ body{min-width:320px;text-rendering:optimizeLegibility;-webkit-font-smoothing:an
   .filters{display:flex;flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px;scrollbar-width:thin}
   .filters .filter{flex:0 0 auto}
 }
-
