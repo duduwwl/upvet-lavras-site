@@ -191,18 +191,18 @@ body{min-width:320px;text-rendering:optimizeLegibility;-webkit-font-smoothing:an
 
 /* Ajustes solicitados: catálogo ampliado e acesso discreto à gerência. */
 .demo-banner,.service-experience{display:none!important}
-.manager-entry{display:flex;align-items:center;gap:13px;width:max-content;max-width:100%;margin-top:25px;padding:11px 16px 11px 11px;border:1px solid #4e9470;border-radius:4px 16px 4px 16px;color:#fff;text-decoration:none;transition:background .2s,border-color .2s,transform .2s var(--ease)}
-.manager-entry:hover{background:#fff;color:var(--dark);border-color:#fff;transform:translateY(-2px)}
-.manager-entry-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--orange);color:#fff;flex:0 0 auto}
-.manager-entry-icon svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.manager-entry{display:flex;align-items:center;gap:8px;width:max-content;max-width:100%;min-height:44px;margin-top:17px;padding:5px 10px 5px 7px;border:1px solid #ffffff40;border-radius:3px 11px 3px 11px;color:#ffffffc9;text-decoration:none;opacity:.76;transition:background .2s,border-color .2s,color .2s,opacity .2s,transform .2s var(--ease)}
+.manager-entry:hover{background:#ffffff10;color:#fff;border-color:#ffffff8a;opacity:1;transform:translateY(-1px)}
+.manager-entry-icon{display:grid;place-items:center;width:26px;height:26px;border:1px solid #ffffff59;border-radius:50%;background:transparent;color:#ffffffd6;flex:0 0 auto}
+.manager-entry-icon svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
 .manager-entry strong,.manager-entry small{display:block;color:inherit}
-.manager-entry strong{font:800 .84rem/1.15 Montserrat,Arial,sans-serif}
-.manager-entry small{margin-top:4px;font-size:.68rem;opacity:.82}
+.manager-entry strong{font:700 .7rem/1.15 Montserrat,Arial,sans-serif;letter-spacing:.01em}
+.manager-entry small{margin-top:2px;font-size:.57rem;opacity:.7}
 .product-photo{position:relative}
 .concept-badge{position:absolute;z-index:3;top:14px;left:14px;padding:7px 9px;background:#fff;color:var(--green);border:1px solid #bad0bd;border-radius:3px;font:800 .57rem/1 Montserrat,Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase}
 .product-concept .product-photo img{object-fit:cover}
 @media(max-width:600px){
-  .manager-entry{margin-top:18px}
+  .manager-entry{margin-top:14px}
   .concept-badge{top:10px;left:10px;font-size:.52rem}
   .filters{display:flex;flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px;scrollbar-width:thin}
   .filters .filter{flex:0 0 auto}
